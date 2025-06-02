@@ -1,0 +1,80 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff5c5c;
+  padding: 1rem 2rem;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  padding-left: 5rem;
+}
+
+.filter-button {
+  background-color: #f5b301;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: #ffdb79;
+}
+
+.cart-button-container {
+  position: absolute;
+  left: 80%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+.cart-button {
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;              /* Asegura el centrado */
+  align-items: center;        /* Centra verticalmente */
+  justify-content: center;    /* Centra horizontalmente */
+  padding: 0;                 /* Elimina espacios innecesarios */
+}
