@@ -3,10 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import disco from '../assets/disco.png';
 import SearchBar from './SearchBar';
 import './Header.css';
-
 const Header = ({ filtro, setFiltro }) => {
   const navigate = useNavigate();
-
   return (
     <header className="header">
       <div className="logo-container">
@@ -15,9 +13,6 @@ const Header = ({ filtro, setFiltro }) => {
           <h1 className="logo-title">Pablo's Record Store</h1>
         </Link>
       </div>
-
-      
-
       <div className="filter-buttons">
         <button
           className={`filter-button ${filtro === 'favoritos' ? 'active' : ''}`}
@@ -38,10 +33,7 @@ const Header = ({ filtro, setFiltro }) => {
           Todos
         </button>
       </div>
-
       <SearchBar />
-      
-
       <div className="cart-button-container">
         <button onClick={() => navigate('/carrito')} className="cart-button"> 🛒
         </button>
@@ -49,5 +41,4 @@ const Header = ({ filtro, setFiltro }) => {
     </header>
   );
 };
-
 export default Header;
