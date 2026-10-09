@@ -12,6 +12,7 @@ const VinylCatalog = () => {
         <div key={producto.id} className="card">
           <img src={producto.img} alt={producto.nombre} className="card-img" />
           <h3>{producto.nombre}</h3>
+          <h4 style={{ color: '#888888' }}>{producto.categoria}</h4>
           <strong>${producto.precio}</strong>
         </div>
         </Link>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import disco from '../assets/disco.png'; 
 import SearchBar from './SearchBar';
+import CartButton from './CartButton';
 
 const Header = () => {
   return (
@@ -21,7 +22,6 @@ const Header = () => {
       height: '80px',
       boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)'
     }}>
-      {/* Logo + Título envuelto en Link */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
           <img
@@ -41,6 +41,17 @@ const Header = () => {
       </div>
 
       <SearchBar />
+
+      {/* Botón del carrito centrado debajo del header */}
+      <div style={{
+        position: 'absolute',
+        left: '80%',
+        top: '100%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: 1001,
+      }}>
+        <CartButton />
+      </div>
     </header>
   );
 };
