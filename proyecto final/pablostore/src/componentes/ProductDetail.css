@@ -8,6 +8,7 @@
   align-items: center;
   gap: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
 }
 
 .product-image {
@@ -43,6 +44,7 @@
   align-items: center;
   gap: 1rem;
   margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .quantity-controls button {
@@ -87,3 +89,42 @@
   background-color: #d62828;
   color: white;
 }
+
+/* 🔽 MEDIA QUERY para móviles */
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+  }
+
+  .product-info h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .descripcion {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .quantity-controls {
+    justify-content: center;
+  }
+
+  .action-buttons {
+    width: 100%;
+    align-items: center;
+  }
+
+  .add-to-cart, .favorite-btn {
+    width: 90%;
+    text-align: center;
+  }
+}
+

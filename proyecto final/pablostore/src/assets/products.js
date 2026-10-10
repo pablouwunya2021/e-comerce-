@@ -164,6 +164,40 @@ export const products = [
     descripcion: "The Black Parade es el tercer álbum de estudio de My Chemical Romance, lanzado en 2006. Este disco es un concepto rockero que narra la historia de un personaje llamado 'The Patient' y contiene himnos como 'Welcome to the Black Parade'.",
     img: "https://upload.wikimedia.org/wikipedia/en/e/ea/Blackparadecover.jpg",
     categoria: "Rock",
+  },
+  {
+    id: 21,
+    nombre: "The Strokes - Is This It",
+    precio: 26.00,
+    descripcion: "Is This It es el álbum debut de The Strokes, lanzado en 2001. Este disco es un referente del garage rock revival y contiene clásicos como 'Last Nite' y 'Someday'.",
+    img: "https://images-eu.ssl-images-amazon.com/images/I/51T-PTwriXL._AC_UL210_SR210,210_.jpg",
+    categoria: "Rock"
+  },
+  {
+    id: 22,
+    nombre: "Radiohead - OK Computer",
+    precio: 29.99,
+    descripcion: "OK Computer es el tercer álbum de estudio de Radiohead, lanzado en 1997. Este disco es considerado uno de los mejores de la historia del rock alternativo, con una mezcla de sonidos experimentales y letras profundas.",
+    img: "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png",
+    categoria: "Rock"
+  },
+  {
+    id: 23,
+    nombre: "Arctic Monkeys - Tranquility Base Hotel & Casino",
+    precio: 28.50,
+    descripcion: "Tranquility Base Hotel & Casino es el sexto álbum de estudio de Arctic Monkeys, lanzado en 2018. Este disco presenta un sonido más experimental y líricas surrealistas, con temas como la vida en un hotel lunar.",
+    img: "https://i.scdn.co/image/ab67616d0000b2738895ff0f90525f4aa9437c27",
+    categoria: "Rock",
+    descuento: 5
+  },
+  {
+    id: 24,
+    nombre: "Green Day - Saviors",
+    precio: 25.00,
+    descripcion: "Saviors es el último álbum de estudio de Green Day, lanzado en 2024. Este disco marca un regreso a sus raíces punk rock con letras reflexivas sobre la sociedad actual.",
+    img: "https://upload.wikimedia.org/wikipedia/en/c/c9/Green_Day_-_Saviors.png",
+    categoria: "Rock",
+
   }
 
 
