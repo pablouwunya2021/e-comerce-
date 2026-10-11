@@ -3,6 +3,7 @@ import './Cart.css';
 import { useCart } from '../context/CartContext';
 import CartItemsList from './CartItemsList';
 import CartTotal from './CartTotal';
+import ClearCartButton from "./ClearCartButton";
 
 const Cart = () => {
   const { cartItems, total } = useCart();
@@ -40,6 +41,7 @@ const Cart = () => {
         >
           <CartItemsList items={cartItems} lastItemRef={lastItemRef} />
           <CartTotal total={total} />
+          <ClearCartButton />
         </div>
       )}
     </div>

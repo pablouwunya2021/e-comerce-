@@ -64,7 +64,9 @@ function ProductDetail() {
         addedToCart={addedToCart}
         favorites={favorites}
         toggleFavorite={toggleFavorite}
+        
       />
+      
     </div>
   );
 }
